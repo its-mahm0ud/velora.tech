@@ -1,0 +1,4 @@
+
+interface IRegister{
+    message:string
+}
