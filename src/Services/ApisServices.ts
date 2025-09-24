@@ -140,7 +140,7 @@ class ApiServices {
 
     async checkOutByVisa(cartId: string, address: string, phone: string, city: string): Promise<ICheckVisa> {
         const enCodetoken = await getDecodedToken();
-        return await fetch(this.#baseUrl + "/api/v1/orders/checkout-session/" + cartId + "?url=http://localhost:3000", {
+        return await fetch(this.#baseUrl + "/api/v1/orders/checkout-session/" + cartId + "?url=https://veloratech.vercel.app", {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json',
