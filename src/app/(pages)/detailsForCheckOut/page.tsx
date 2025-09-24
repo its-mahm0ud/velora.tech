@@ -108,7 +108,7 @@ export default function DetailsForCheckOut() {
     }
 
     return (
-        <div className="md:p-36 py-10 flex">
+        <div className="md:pb-36 py-10 flex">
             <form
                 onSubmit={handleSubmit(onSubmit)}
                 className="mx-auto w-full md:max-w-3xl space-y-6 p-8 border rounded-2xl shadow-sm bg-card text-card-foreground"

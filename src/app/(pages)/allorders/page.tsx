@@ -27,7 +27,7 @@ export default function AccountUser() {
 
     getAllOrders();
 
-  }, [userId,getAllOrders])
+  }, [userId])
 
   if (isOrdersLoading) {
     return <LoadingComponent />
