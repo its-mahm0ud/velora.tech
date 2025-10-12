@@ -3,11 +3,10 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { NavbarComponent } from "@/Components";
 import { FooterComponent } from "@/Components";
-import { Toaster } from 'react-hot-toast';
+import { Toaster } from "react-hot-toast";
 import ContextCartProvider from "@/contexts/contextCart";
 import ProviderRedux from "@/Components/ProviderRedux";
 import { AuthSessionProvider } from "@/contexts/AuthProvider";
-
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -42,8 +41,6 @@ export default function RootLayout({
             </ContextCartProvider>
           </ProviderRedux>
         </AuthSessionProvider>
-
-
       </body>
     </html>
   );
